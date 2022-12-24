@@ -50,5 +50,9 @@ int allocateBooks(vector<int> arr, int n, int m) {
         }
         mid = s + (e-s)/2;
     }
-    return ans;
+    
+    if(m>n)
+        return -1;
+    else
+        return ans;
 }
